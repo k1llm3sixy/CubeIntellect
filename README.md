@@ -1,6 +1,6 @@
 # CubeIntellect
 
-A Minecraft mod for version 1.20.4 (Fabric) that allows you to chat with the Gemini AI directly in-game.
+A Minecraft mod for version 1.20 - 1.21 (Fabric) that allows you to chat with the Gemini AI directly in-game.
 
 ---
 
@@ -14,7 +14,7 @@ A Minecraft mod for version 1.20.4 (Fabric) that allows you to chat with the Gem
 
 ## Installation
 
-1. Make sure you have Fabric Loader installed for Minecraft 1.20.4
+1. Make sure you have Fabric Loader installed for Minecraft 1.20 - 1.21
 2. Place the CubeIntellect mod file into your `mods` folder
 3. Launch Minecraft with Fabric
 
@@ -40,6 +40,7 @@ A Minecraft mod for version 1.20.4 (Fabric) that allows you to chat with the Gem
 
 ## Requirements
 
-- Minecraft 1.20.4
+- Minecraft 1.20 - 1.21
+- Fabric API
 - Fabric Loader
 - Gemini API key (required for AI interaction)
