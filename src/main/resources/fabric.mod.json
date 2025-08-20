@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "cubeintellect",
+  "version": "${version}",
+  "name": "CubeIntellect",
+  "description": "Mod provides an opportunity to interact with AI directly in MINECRAFT!",
+  "authors": ["k1llm3sixy"],
+  "license": "All-Rights-Reserved",
+  "icon": "assets/cubeintellect/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.k1llm3sixy.cubeintellect.client.CubeIntellect"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-language-kotlin": ">=${kotlin_loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
