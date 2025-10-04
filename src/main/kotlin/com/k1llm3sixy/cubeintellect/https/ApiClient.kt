@@ -42,7 +42,7 @@ object ApiClient {
                         ?.text
                 }
             } else {
-                logger.error("Something went wrong! Code $responseCode")
+                logger.error("Something went wrong! Code - $responseCode")
                 return Text.translatable("message.answer_error").string
             }
         } catch (e: Exception) {
