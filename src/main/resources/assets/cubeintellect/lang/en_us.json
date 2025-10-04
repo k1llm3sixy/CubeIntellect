@@ -1,0 +1,21 @@
+{
+  "message.help_1": "§e/cubeintellect question <question> §7- Here you can ask your question",
+  "message.help_2": "§e/cubeintellect settings §7- Open mod settings",
+  "message.question": "§6» §eYour question: %s",
+  "message.model": "§6» Gemini model: %s",
+  "message.answer": "§6» Gemini answer: %s",
+  "message.temperature": "§6» Gemini temperature: %s",
+  "message.max_tokens": "§6» Gemini tokens: %s",
+  "message.answer_part": "§6» Part #%d: %s",
+  "message.answer_error": "§6» §4Something went wrong!",
+  "message.apikey_empty": "§4API key is Empty! §aUse /cubeintellect settings §4to set key",
+  "config.category.main": "Main",
+  "config.option.api_key": "Gemini API key",
+  "config.option.gemini_model": "Gemini model",
+  "config.option.temperature": "Model temperature",
+  "config.option.max_tokens": "Max tokens",
+  "config.description.api_key": "Here you can get Gemini API key. URL: %s",
+  "config.description.gemini_model": "Available Gemini models: %s",
+  "config.description.temperature": "Controls the randomness or creativity of the response. Higher values lead to more unexpected and diverse output",
+  "config.description.max_tokens": "Limits the length of the generated response"
+}

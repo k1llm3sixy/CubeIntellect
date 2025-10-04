@@ -3,19 +3,28 @@
   "id": "cubeintellect",
   "version": "${version}",
   "name": "CubeIntellect",
-  "description": "Mod provides an opportunity to interact with AI directly in MINECRAFT!",
+  "description": "Interact with GEMINI AI directly in MINECRAFT!",
   "authors": ["k1llm3sixy"],
+  "contact": {
+    "email": "k1llm3sixy@gmail.com",
+    "sources": "https://github.com/k1llm3sixy/CubeIntellect",
+    "issues": "https://github.com/k1llm3sixy/CubeIntellect/issues"
+  },
   "license": "All-Rights-Reserved",
   "icon": "assets/cubeintellect/icon.png",
   "environment": "*",
   "entrypoints": {
+    "modmenu": [
+      "com.k1llm3sixy.cubeintellect.config.ModMenuApiImpl"
+    ],
     "client": [
-      "com.k1llm3sixy.cubeintellect.client.CubeIntellect"
+      "com.k1llm3sixy.cubeintellect.CubeIntellect"
     ]
   },
   "depends": {
     "fabricloader": ">=0.15.0",
     "fabric-language-kotlin": ">=${kotlin_loader_version}",
+    "yet_another_config_lib_v3": "*",
     "fabric": "*",
     "minecraft": ">=1.20.1"
   }

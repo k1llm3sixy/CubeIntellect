@@ -1,0 +1,21 @@
+{
+  "message.help_1": "§e/cubeintellect question <question> §7- Задать свой вопрос",
+  "message.help_2": "§e/cubeintellect settings §7- Открыть настройки мода",
+  "message.question": "§6» §eВаш вопрос: %s",
+  "message.model": "§6» Модель Gemini: %s",
+  "message.answer": "§6» Ответ Gemini: %s",
+  "message.temperature": "§6» Креативность Gemini: %s",
+  "message.max_tokens": "§6» Токены Gemini: %s",
+  "message.answer_part": "§6» Часть #%d: %s",
+  "message.answer_error": "§4Что-то пошло не так!",
+  "message.apikey_empty": "§4API ключ пустой! §aИспользуйте /cubeintellect settings §4чтобы установить ключ",
+  "config.category.main": "Основное",
+  "config.option.api_key": "API ключ Gemini",
+  "config.option.gemini_model": "Модель Gemini",
+  "config.option.temperature": "Креативность модели",
+  "config.option.max_tokens": "Максимальное кол-во токенов",
+  "config.description.api_key": "Здесь можно получить API ключ Gemini. Ссылка: %s",
+  "config.description.gemini_model": "Список доступных моделей: %s",
+  "config.description.temperature": "Контролирует случайность (креативность) ответа. Чем выше, тем более неожиданным и творческим будет ответ",
+  "config.description.max_tokens": "Ограничивает длину ответа"
+}

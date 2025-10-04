@@ -5,31 +5,34 @@ plugins {
     kotlin("jvm") version "2.1.21"
     id("fabric-loom") version "1.10-SNAPSHOT"
     id("maven-publish")
-    id("com.gradleup.shadow") version "8.3.0"
 }
 
 version = project.property("mod_version") as String
 group = project.property("maven_group") as String
 
-base {
-    archivesName.set(project.property("archives_base_name") as String)
-}
+base { archivesName.set(project.property("archives_base_name") as String) }
 
 val targetJavaVersion = 17
-java {
-    toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
-}
+java { toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion) }
 
-repositories {}
+repositories {
+    maven("https://maven.isxander.dev/releases") { name = "Xander Maven" }
+    maven("https://maven.nucleoid.xyz/") { name = "Nucleoid" }
+    maven {
+        name = "Terraformers"
+        url = uri("https://maven.terraformersmc.com/")
+    }
+}
 
 dependencies {
     minecraft("com.mojang:minecraft:${project.property("minecraft_version")}")
     mappings("net.fabricmc:yarn:${project.property("yarn_mappings")}:v2")
     modImplementation("net.fabricmc:fabric-loader:${project.property("loader_version")}")
     modImplementation("net.fabricmc:fabric-language-kotlin:${project.property("kotlin_loader_version")}")
-
+    modImplementation("dev.isxander:yet-another-config-lib:${project.property("yacl_version")}")
+    modImplementation("com.terraformersmc:modmenu:${project.property("modmenu_version")}")
+    modImplementation("eu.pb4:placeholder-api:2.4.0-pre.3+1.20.4")
     modImplementation("net.fabricmc.fabric-api:fabric-api:${project.property("fabric_version")}")
-    include("net.fabricmc:fabric-language-kotlin:1.13.3+kotlin.2.1.21")
 }
 
 tasks.processResources {
@@ -61,15 +64,4 @@ tasks.jar {
     from("LICENSE") {
         rename { "${it}_${project.base.archivesName}" }
     }
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("mavenJava") {
-            artifactId = project.property("archives_base_name") as String
-            from(components["java"])
-        }
-    }
-
-    repositories {}
 }

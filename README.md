@@ -1,46 +1,37 @@
-# CubeIntellect
+## ENG
 
-A Minecraft mod for version 1.20 - 1.21 (Fabric) that allows you to chat with the Gemini AI directly in-game.
-
----
+Interact with GEMINI AI directly in MINECRAFT!
 
 ## Features
 
-- Communicate with Gemini AI via Minecraft chat
 - Choose from different available Gemini models
 - Use your own Gemini API key for authentication
-
----
-
-## Installation
-
-1. Make sure you have Fabric Loader installed for Minecraft 1.20 - 1.21
-2. Place the CubeIntellect mod file into your `mods` folder
-3. Launch Minecraft with Fabric
-
----
+- Allows you to change temperature, max length of answer
 
 ## Commands
 - `/cubeintellect`  
-  Shows help information about available commands.
-
-
-- `/cubeintellect setKey <key>`  
-  Add your Gemini API key to enable AI access.
-
+  Shows help information about available commands
 
 - `/cubeintellect question <question>`  
-  Ask a question and get an AI response directly in-game.
+  Ask a question
 
+- `/cubeintellect settings`  
+  Mod settings
 
-- `/cubeintellect model <model>`  
-  Select an available AI model for your queries.
+## RUS
 
----
+Взаимодействуй с GEMINI ИИ прямо в майнкрафте!
 
-## Requirements
+## Возможности
 
-- Minecraft 1.20 - 1.21
-- Fabric API
-- Fabric Loader
-- Gemini API key (required for AI interaction)
+- Выбирай разные модели Gemini
+- Используй свой ключ API
+- Изменяй креативность модели и максимальную длину ответа
+
+## Команды
+
+- `/cubeintellect`
+  Показывает информацию о доступных командах
+
+- `/cubeintellect question <question>`
+  Задать вопрос
